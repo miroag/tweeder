@@ -5,7 +5,16 @@
 
     <ul>
         {% for topic in topics %}
-            <li><h3><a href="{% url 'extract:detail' topic.id %}">{{ topic.name }}</a></h3></li>
+            <li><h3>{{ topic.name }}</h3></li>
+            {% for listing in topic.listing_set.all %}
+                <div>
+                    <span id="w_{{ listing.site_id }}">
+                 {{ listing.content | safe }}
+                    </span>
+                    <span id="i_{{ listing.site_id }}" class="icon-person" >xxx</span>
+
+                </div>
+            {% endfor %}
         {% endfor %}
     </ul>
 

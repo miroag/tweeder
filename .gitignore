@@ -107,3 +107,4 @@ ENV/
 .idea
 *.iml
 *.komodoproject
+/backend/db.sqlite3

@@ -56,13 +56,13 @@ setup(
         # eg: 'keyword1', 'keyword2', 'keyword3',
     ],
     install_requires=[
-        'beautifulsoup4', 'requests', 'aiohttp', 'tqdm', 'docopt'
+        'beautifulsoup4', 'requests', 'requests-file', 'aiohttp', 'tqdm', 'docopt', 'django',
     ],
     setup_requires=[
         'pytest-runner',
     ],
     tests_require=[
-        'pytest',
+        'pytest', 'pytest-django'
     ],
     extras_require={
         # eg:

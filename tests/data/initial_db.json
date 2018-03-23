@@ -1,0 +1,43 @@
+[
+  {
+    "model": "extract.topic",
+    "pk": 1,
+    "fields": {
+      "name": "Local File",
+      "url": "file://",
+      "is_active": false
+    }
+  },
+  {
+    "model": "extract.topic",
+    "pk": 2,
+    "fields": {
+      "name": "Real location",
+      "url": "https://www.2dehands.be/hobby/modelbouw-schaalmodellen/miniatuurgereedschap/",
+      "is_active": true
+    }
+  },
+  {
+    "model": "extract.topic",
+    "pk": 3,
+    "fields": {
+      "name": "tables",
+      "url": "https://www.2dehands.be/huis-meubelen/tafels-bureaus/",
+      "is_active": false
+    }
+  },
+  {
+    "model": "extract.listing",
+    "pk": 1,
+    "fields": {
+      "topic": 2,
+      "site_id": "NA",
+      "title": "Super Listing",
+      "content": "<p>Not implemented</p>",
+      "is_viewed": false,
+      "is_clicked": false,
+      "pub_date": "2018-03-23T10:08:47.040Z",
+      "view_date": "2018-03-23T10:08:47.040Z"
+    }
+  }
+]

@@ -12,7 +12,7 @@ class Topic(models.Model):
 
 class Listing(models.Model):
     topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
-    site_id = models.CharField(max_length=200, default='')
+    site_id = models.CharField(max_length=200, default='', unique=True)
     title = models.CharField(max_length=200, default='')
     content = models.TextField()
     is_viewed = models.BooleanField(default=False)
